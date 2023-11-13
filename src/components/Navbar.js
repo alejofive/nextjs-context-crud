@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { AiOutlinePlus } from "react-icons/ai";
 import { useRouter } from "next/navigation";
+import { AiOutlinePlus } from "react-icons/ai";
 import { useTasks } from "../context/TasksContext";
 
 export function Navbar() {
@@ -15,7 +15,9 @@ export function Navbar() {
         <h1 className="font-black text-3xl text-white">Task App</h1>
       </Link>
 
-      <span className="ml-2 text-gray-400 font-bold">{tasks.length} tasks</span>
+      <span className="ml-2 text-gray-400 font-semibold">
+        {tasks.length} tasks
+      </span>
 
       <div className="flex-grow text-right">
         <button
